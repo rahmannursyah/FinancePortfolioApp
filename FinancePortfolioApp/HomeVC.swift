@@ -1,13 +1,17 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  FinancePortfolioApp
 //
 //  Created by Rahmannur Rizki Syahputra on 18/01/24.
 //
 
 import UIKit
+import Data
+import SwiftyJSON
+import Domain
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
+    var presenter: HomeViewToPresenter?
 
 	private lazy var nextBtn: UIButton = {
 		let btn = UIButton()
@@ -29,12 +33,22 @@ class ViewController: UIViewController {
 			nextBtn.centerYAnchor.constraint(equalTo: view.centerYAnchor),
 			nextBtn.widthAnchor.constraint(equalToConstant: 100)
 		])
+		
+		presenter?.getTransactionData(Bundle: Bundle(identifier: "com.nur.Data")!, filename: "portfolioData")
 	}
-
 
 	@objc private func didTappedBtn() {
 		self.navigationController?.pushViewController(SecondViewController(), animated: true)
 	}
-	
 }
 
+extension HomeVC: HomePresenterToView {
+	func didSuccessGetTransactionDetail(name: [String], percentage: [Int]) {
+		print(name)
+		print(percentage)
+	}
+	
+	func didFailGetTransactionDetail(error: String) {
+		print(error)
+	}
+}

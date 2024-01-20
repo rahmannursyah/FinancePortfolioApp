@@ -7,10 +7,12 @@ workspace 'FinancePortfolioApp'
 
 
 target 'FinancePortfolioApp' do
+	pod 'SwiftyJSON'
+	pod 'DGCharts', '5.0.0'
   target 'FinancePortfolioAppTests' do
     inherit! :search_paths
-		pod 'Quick'
-		pod 'Nimble'
+		pod 'Quick', '7.3.0'
+		pod 'Nimble', '13.1.2'
   end
 end
 
@@ -20,6 +22,7 @@ end
 
 target 'Data' do
 	project 'Data/Data.project'
+	pod 'SwiftyJSON'
 end
 
 target 'Domain' do

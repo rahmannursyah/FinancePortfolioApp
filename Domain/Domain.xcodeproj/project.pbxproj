@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C6491E42B5BAAF500D966A4 /* CustomErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6491E32B5BAAF500D966A4 /* CustomErrorModel.swift */; };
 		5CAE1B382B5962D900C1F3FA /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CAE1B372B5962D900C1F3FA /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CAE1B662B59771800C1F3FA /* PortfolioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1B652B59771800C1F3FA /* PortfolioModel.swift */; };
 		6FF5F00332B7FCF0DBC87DDA /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9AE6B5CDA821BE7D8880154 /* Pods_Domain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2AE4C2B09AD876A4A0DD862B /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		325F768F15FF315FE927E58D /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
+		5C6491E32B5BAAF500D966A4 /* CustomErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrorModel.swift; sourceTree = "<group>"; };
 		5CAE1B342B5962D900C1F3FA /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAE1B372B5962D900C1F3FA /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		5CAE1B652B59771800C1F3FA /* PortfolioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioModel.swift; sourceTree = "<group>"; };
 		A9AE6B5CDA821BE7D8880154 /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -53,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				5CAE1B372B5962D900C1F3FA /* Domain.h */,
+				5CAE1B652B59771800C1F3FA /* PortfolioModel.swift */,
+				5C6491E32B5BAAF500D966A4 /* CustomErrorModel.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -119,6 +125,7 @@
 				TargetAttributes = {
 					5CAE1B332B5962D900C1F3FA = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -180,6 +187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CAE1B662B59771800C1F3FA /* PortfolioModel.swift in Sources */,
+				5C6491E42B5BAAF500D966A4 /* CustomErrorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2AE4C2B09AD876A4A0DD862B /* Pods-Domain.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -339,6 +349,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -348,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 325F768F15FF315FE927E58D /* Pods-Domain.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
