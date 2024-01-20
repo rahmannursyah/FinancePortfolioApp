@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		49E8987B845E08D9CCF119F8 /* Pods_FinancePortfolioAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA7D3328208527773AADA8B /* Pods_FinancePortfolioAppTests.framework */; };
 		4C8893D05F8B8982B6178A50 /* Pods_FinancePortfolioApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2A5EBFD44D23B949BA7ED /* Pods_FinancePortfolioApp.framework */; };
-		5C6492002B5BDA3C00D966A4 /* CommonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6491FF2B5BDA3C00D966A4 /* CommonExtension.framework */; };
+		5C6492032B5BE0CC00D966A4 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAE1B672B5978C800C1F3FA /* Domain.framework */; };
+		5C6492042B5BE0CC00D966A4 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAE1B672B5978C800C1F3FA /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C6492062B5BE0CE00D966A4 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAE1B612B59756300C1F3FA /* Data.framework */; };
+		5C6492072B5BE0CE00D966A4 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAE1B612B59756300C1F3FA /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C6492082B5BE0CF00D966A4 /* CommonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6491FF2B5BDA3C00D966A4 /* CommonExtension.framework */; };
+		5C6492092B5BE0CF00D966A4 /* CommonExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6491FF2B5BDA3C00D966A4 /* CommonExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5CAE1ABF2B59625400C1F3FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1ABE2B59625400C1F3FA /* AppDelegate.swift */; };
 		5CAE1AC12B59625400C1F3FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1AC02B59625400C1F3FA /* SceneDelegate.swift */; };
 		5CAE1AC82B59625600C1F3FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAE1AC72B59625600C1F3FA /* Assets.xcassets */; };
@@ -21,8 +26,6 @@
 		5CAE1B5E2B59717F00C1F3FA /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1B592B59717F00C1F3FA /* HomeRouter.swift */; };
 		5CAE1B5F2B59717F00C1F3FA /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1B5A2B59717F00C1F3FA /* HomeInteractor.swift */; };
 		5CAE1B602B59717F00C1F3FA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1B5B2B59717F00C1F3FA /* HomeVC.swift */; };
-		5CAE1B622B59756300C1F3FA /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAE1B612B59756300C1F3FA /* Data.framework */; };
-		5CAE1B682B5978C800C1F3FA /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAE1B672B5978C800C1F3FA /* Domain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,22 @@
 			remoteInfo = FinancePortfolioApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C6492052B5BE0CC00D966A4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5C6492072B5BE0CE00D966A4 /* Data.framework in Embed Frameworks */,
+				5C6492042B5BE0CC00D966A4 /* Domain.framework in Embed Frameworks */,
+				5C6492092B5BE0CF00D966A4 /* CommonExtension.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0D890179D7A4B7C55226C017 /* Pods-FinancePortfolioApp-FinancePortfolioAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancePortfolioApp-FinancePortfolioAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FinancePortfolioApp-FinancePortfolioAppUITests/Pods-FinancePortfolioApp-FinancePortfolioAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,10 +88,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CAE1B682B5978C800C1F3FA /* Domain.framework in Frameworks */,
-				5CAE1B622B59756300C1F3FA /* Data.framework in Frameworks */,
+				5C6492062B5BE0CE00D966A4 /* Data.framework in Frameworks */,
+				5C6492032B5BE0CC00D966A4 /* Domain.framework in Frameworks */,
 				4C8893D05F8B8982B6178A50 /* Pods_FinancePortfolioApp.framework in Frameworks */,
-				5C6492002B5BDA3C00D966A4 /* CommonExtension.framework in Frameworks */,
+				5C6492082B5BE0CF00D966A4 /* CommonExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +198,7 @@
 				5CAE1AB82B59625400C1F3FA /* Frameworks */,
 				5CAE1AB92B59625400C1F3FA /* Resources */,
 				2994E5901B78F88CF2690CE9 /* [CP] Embed Pods Frameworks */,
+				5C6492052B5BE0CC00D966A4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
