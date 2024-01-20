@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CommonExtension
 import Data
 import DGCharts
 import Domain
@@ -15,6 +16,7 @@ class HomeVC: UIViewController {
 
 	private lazy var pieChartView: PieChartView = {
 		let pieView = PieChartView()
+		pieView.delegate = self
 		pieView.translatesAutoresizingMaskIntoConstraints = false
 		return pieView
 	}()
@@ -36,34 +38,27 @@ class HomeVC: UIViewController {
 	private func setupConstraints() {
 		NSLayoutConstraint.activate([
 			pieChartView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-			pieChartView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height / 2),
-			pieChartView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+			pieChartView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+			pieChartView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100),
 			pieChartView.widthAnchor.constraint(equalTo: view.widthAnchor)
 		])
 	}
 	
-	@objc private func didTappedBtn() {
-		self.navigationController?.pushViewController(SecondViewController(), animated: true)
-	}
-}
-
-extension HomeVC: HomePresenterToView {
-	func didSuccessGetTransactionDetail(name: [String], percentage: [Double], nominal: [Double]) {
-		print(name)
-		print(percentage)
-		print(nominal)
-		
+	private func setupPieChartData(data: [PortfolioUIModel]) {
 		// 1. Set ChartDataEntry
 		var dataEntries: [ChartDataEntry] = []
-		for i in 0..<name.count {
-			let dataEntry = PieChartDataEntry(value: percentage[i], label: name[i], data: name[i] as AnyObject)
+		for i in 0..<data.count {
+			let dataEntry = PieChartDataEntry(value: data[i].percentage,
+											  label: "\(data[i].label)\n\(data[i].totalTransactions.formatted())",
+											  data: data[i])
 			dataEntries.append(dataEntry)
 		}
 		// 2. Set ChartDataSet
 		let pieChartDataSet = PieChartDataSet(entries: dataEntries, label: "")
-		pieChartDataSet.colors = [UIColor.red, UIColor.green, UIColor.yellow, UIColor.blue]
-		pieChartDataSet.valueColors = [UIColor.black]
+		pieChartDataSet.colors = colorsOfCharts(numbersOfColor: dataEntries.count)
+		pieChartDataSet.valueColors = [UIColor.clear]
 		pieChartDataSet.entryLabelColor = UIColor.black
+		pieChartDataSet.entryLabelFont = UIFont.boldSystemFont(ofSize: 14)
 		// 3. Set ChartData
 		let pieChartData = PieChartData(dataSet: pieChartDataSet)
 		let format = NumberFormatter()
@@ -72,6 +67,19 @@ extension HomeVC: HomePresenterToView {
 		pieChartData.setValueFormatter(formatter)
 		// 4. Assign it to the chart’s data
 		pieChartView.data = pieChartData
+		pieChartView.centerText = "Portfolio Data"
+	}
+}
+
+extension HomeVC: ChartViewDelegate {
+	func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
+		presenter?.routeToDetail(transactionData: entry.data as! PortfolioUIModel, navigationController: self.navigationController)
+	}
+}
+
+extension HomeVC: HomePresenterToView {
+	func didSuccessGetTransactionDetail(model: [PortfolioUIModel]) {
+		setupPieChartData(data: model)
 	}
 	
 	func didFailGetTransactionDetail(error: String) {

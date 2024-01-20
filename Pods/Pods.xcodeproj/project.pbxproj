@@ -636,7 +636,7 @@
 		682DA490EF74F8E6F8A12B5623507F7F /* Pods-Utility-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Utility-Info.plist"; sourceTree = "<group>"; };
 		69DEB9D741A5C4A8F2E1D5EBD2662643 /* Pods-Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Data.release.xcconfig"; sourceTree = "<group>"; };
 		6AC99812DE1A5BE7F3F96D13491D2621 /* CwlMachBadInstructionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlMachBadInstructionHandler.m; path = Sources/CwlMachBadInstructionHandler/CwlMachBadInstructionHandler.m; sourceTree = "<group>"; };
-		6AC9D68571342581B828F12529180B04 /* mach_excServer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mach_excServer.c; path = Sources/CwlMachBadInstructionHandler/mach_excServer.c; sourceTree = "<group>"; };
+		6AC9D68571342581B828F12529180B04 /* mach_excServer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mach_excServer.c; path = Sources/CwlMachBadInstructionHandler/mach_excServer.c; sourceTree = "<group>"; };
 		6BD47F7EBAFB30AB12A195B9A6B81050 /* Pods-Domain-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Domain-Info.plist"; sourceTree = "<group>"; };
 		6D26EDD67B642498808242CB79C7A6E8 /* CwlCatchException.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CwlCatchException.release.xcconfig; sourceTree = "<group>"; };
 		6D757D7CF982BCDFA2C24758E3F91A7F /* PieChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartData.swift; path = Source/Charts/Data/Implementations/Standard/PieChartData.swift; sourceTree = "<group>"; };
@@ -708,7 +708,7 @@
 		9B5EFBE7D4956AF7C8C8859A79847324 /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
 		9BFE1D7868FF08A2F796781B5B0829FE /* BarLineScatterCandleBubbleChartDataSetProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarLineScatterCandleBubbleChartDataSetProtocol.swift; path = Source/Charts/Data/Interfaces/BarLineScatterCandleBubbleChartDataSetProtocol.swift; sourceTree = "<group>"; };
 		9D2A7461E02C0AF6B9FD8CBA1B1B6DBF /* AsyncWorld+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AsyncWorld+DSL.swift"; path = "Sources/Quick/DSL/AsyncWorld+DSL.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E2CB3ABBBDE23B1AFBB1E6ADCD232C0 /* DefaultAxisValueFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAxisValueFormatter.swift; path = Source/Charts/Formatters/DefaultAxisValueFormatter.swift; sourceTree = "<group>"; };
 		9EA06721134C55A8DC2B4C028FC39611 /* CwlMachBadInstructionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlMachBadInstructionHandler.h; path = Sources/CwlMachBadInstructionHandler/include/CwlMachBadInstructionHandler.h; sourceTree = "<group>"; };
 		A0784A24EE3DD57D5C5B54208B4BE58B /* ChartColorTemplates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChartColorTemplates.swift; path = Source/Charts/Utils/ChartColorTemplates.swift; sourceTree = "<group>"; };
@@ -1028,7 +1028,6 @@
 				7E7330671382F577D59DBB6EF9AD09C8 /* CwlCatchException.m */,
 				AC4DE559491C011612C18E028307C06C /* Support Files */,
 			);
-			name = CwlCatchExceptionSupport;
 			path = CwlCatchExceptionSupport;
 			sourceTree = "<group>";
 		};
@@ -1077,7 +1076,6 @@
 				7BE12E8531526B1329E845C4E4324BC8 /* SwiftyJSON.swift */,
 				19496221AEF1F22B88D95B1C1D0883CB /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -1111,7 +1109,6 @@
 				F7A70B73FA81FE89E38B5FB7A708AB36 /* CwlCatchBadInstructionPosix.swift */,
 				EBB98E6EF6F272D217CE5C783815C0E0 /* Support Files */,
 			);
-			name = CwlPosixPreconditionTesting;
 			path = CwlPosixPreconditionTesting;
 			sourceTree = "<group>";
 		};
@@ -1172,7 +1169,6 @@
 				304C6A8471341C05A929B9BC79EA0EE5 /* mach_excServer.h */,
 				803E24C9D8E1E7D6A1C83331723E1BCE /* Support Files */,
 			);
-			name = CwlMachBadInstructionHandler;
 			path = CwlMachBadInstructionHandler;
 			sourceTree = "<group>";
 		};
@@ -1285,7 +1281,6 @@
 				C1374F6895A8804267157993880C0655 /* Core */,
 				EE014D0C7B9CF067CC28D8D9A2EAE9EB /* Support Files */,
 			);
-			name = DGCharts;
 			path = DGCharts;
 			sourceTree = "<group>";
 		};
@@ -1325,7 +1320,6 @@
 				D335F6B138DD7DDD2C3C49D5D6A4652E /* CwlCatchException.swift */,
 				8AD139A6131D46E40042C07EE706F600 /* Support Files */,
 			);
-			name = CwlCatchException;
 			path = CwlCatchException;
 			sourceTree = "<group>";
 		};
@@ -1367,7 +1361,6 @@
 				EA5619901B04BFD7049D820D2D53C310 /* CwlDarwinDefinitions.swift */,
 				9D4E29BD3FBE89A29411F0089F30DA6F /* Support Files */,
 			);
-			name = CwlPreconditionTesting;
 			path = CwlPreconditionTesting;
 			sourceTree = "<group>";
 		};
@@ -1601,7 +1594,6 @@
 				614111712F4D33CEF8278412BF707482 /* XCTestSuite+QuickTestSuiteBuilder.m */,
 				5357B7B2C64930439D48E8207AEE0EA8 /* Support Files */,
 			);
-			name = Quick;
 			path = Quick;
 			sourceTree = "<group>";
 		};
@@ -1714,7 +1706,6 @@
 				1131240E29F93658B6D93CECA5495B77 /* XCTestObservationCenter+Register.m */,
 				AEAEFD27EB39BA21FAABBA35B3F5EBF7 /* Support Files */,
 			);
-			name = Nimble;
 			path = Nimble;
 			sourceTree = "<group>";
 		};
@@ -3257,7 +3248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3719,7 +3710,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

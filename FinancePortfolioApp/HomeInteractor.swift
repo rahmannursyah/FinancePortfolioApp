@@ -18,6 +18,8 @@ class HomeInteractor: HomePresenterToInteractor {
 		self.localJsonRepository = localJsonRepository
 	}
 	
+	/// Fetch the portfolio data from json file
+	/// Decode the JSON from file into Model
 	func fetchPortfolioData(Bundle: Bundle, fileName: String) {
 		let parsedJsonData = localJsonRepository.parseFromJsonFile(Bundle: Bundle, fileName: fileName)
 		switch parsedJsonData {
@@ -28,6 +30,7 @@ class HomeInteractor: HomePresenterToInteractor {
 		}
 	}
 	
+	/// Decode the JSON from file into PortfolioModel
 	func decodedPortfolioModel(data: JSON) {
 		do {
 			let model = try localJsonRepository.decodeJsonDataToModel(data: data.arrayValue[0].rawData(), to: PortfolioModel.self)

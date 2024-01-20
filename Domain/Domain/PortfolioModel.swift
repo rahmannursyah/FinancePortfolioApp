@@ -25,3 +25,17 @@ public struct TransactionDetail: Codable {
 	public let nominal: Double
 	
 }
+
+public struct PortfolioUIModel: Codable {
+	public let label: String
+	public let percentage: Double
+	public let totalTransactions: Double
+	public let transactionDateNominal: [TransactionDetail]
+	
+	public init(label: String, percentage: Double, totalTransactions: Double, transactionDateNominal: [TransactionDetail]) {
+		self.label = label
+		self.percentage = percentage
+		self.totalTransactions = totalTransactions
+		self.transactionDateNominal = transactionDateNominal
+	}
+}

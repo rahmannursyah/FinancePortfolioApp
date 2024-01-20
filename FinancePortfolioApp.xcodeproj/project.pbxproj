@@ -15,12 +15,16 @@
 		5C6492072B5BE0CE00D966A4 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAE1B612B59756300C1F3FA /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C6492082B5BE0CF00D966A4 /* CommonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6491FF2B5BDA3C00D966A4 /* CommonExtension.framework */; };
 		5C6492092B5BE0CF00D966A4 /* CommonExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6491FF2B5BDA3C00D966A4 /* CommonExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C6492152B5C0F2500D966A4 /* DetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6492102B5C0F2500D966A4 /* DetailContract.swift */; };
+		5C6492162B5C0F2500D966A4 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6492112B5C0F2500D966A4 /* DetailPresenter.swift */; };
+		5C6492172B5C0F2500D966A4 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6492122B5C0F2500D966A4 /* DetailRouter.swift */; };
+		5C6492182B5C0F2500D966A4 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6492132B5C0F2500D966A4 /* DetailInteractor.swift */; };
+		5C6492192B5C0F2500D966A4 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6492142B5C0F2500D966A4 /* DetailVC.swift */; };
 		5CAE1ABF2B59625400C1F3FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1ABE2B59625400C1F3FA /* AppDelegate.swift */; };
 		5CAE1AC12B59625400C1F3FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1AC02B59625400C1F3FA /* SceneDelegate.swift */; };
 		5CAE1AC82B59625600C1F3FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAE1AC72B59625600C1F3FA /* Assets.xcassets */; };
 		5CAE1ACB2B59625600C1F3FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CAE1AC92B59625600C1F3FA /* LaunchScreen.storyboard */; };
 		5CAE1AD62B59625600C1F3FA /* FinancePortfolioAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1AD52B59625600C1F3FA /* FinancePortfolioAppTests.swift */; };
-		5CAE1B532B59667700C1F3FA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1B522B59667700C1F3FA /* SecondViewController.swift */; };
 		5CAE1B5C2B59717F00C1F3FA /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1B572B59717F00C1F3FA /* HomeContract.swift */; };
 		5CAE1B5D2B59717F00C1F3FA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1B582B59717F00C1F3FA /* HomePresenter.swift */; };
 		5CAE1B5E2B59717F00C1F3FA /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1B592B59717F00C1F3FA /* HomeRouter.swift */; };
@@ -59,6 +63,11 @@
 		3476DF60463BF713AB6FC6B8 /* Pods_FinancePortfolioApp_FinancePortfolioAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinancePortfolioApp_FinancePortfolioAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		591E534DCD2D7D474B38EAE8 /* Pods-FinancePortfolioApp-FinancePortfolioAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancePortfolioApp-FinancePortfolioAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FinancePortfolioApp-FinancePortfolioAppUITests/Pods-FinancePortfolioApp-FinancePortfolioAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5C6491FF2B5BDA3C00D966A4 /* CommonExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6492102B5C0F2500D966A4 /* DetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContract.swift; sourceTree = "<group>"; };
+		5C6492112B5C0F2500D966A4 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		5C6492122B5C0F2500D966A4 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		5C6492132B5C0F2500D966A4 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		5C6492142B5C0F2500D966A4 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		5CAE1ABB2B59625400C1F3FA /* FinancePortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancePortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAE1ABE2B59625400C1F3FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CAE1AC02B59625400C1F3FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +76,6 @@
 		5CAE1ACC2B59625600C1F3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CAE1AD12B59625600C1F3FA /* FinancePortfolioAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinancePortfolioAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAE1AD52B59625600C1F3FA /* FinancePortfolioAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePortfolioAppTests.swift; sourceTree = "<group>"; };
-		5CAE1B522B59667700C1F3FA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5CAE1B572B59717F00C1F3FA /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeContract.swift; path = FinancePortfolioApp/HomeContract.swift; sourceTree = SOURCE_ROOT; };
 		5CAE1B582B59717F00C1F3FA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePresenter.swift; path = FinancePortfolioApp/HomePresenter.swift; sourceTree = SOURCE_ROOT; };
 		5CAE1B592B59717F00C1F3FA /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeRouter.swift; path = FinancePortfolioApp/HomeRouter.swift; sourceTree = SOURCE_ROOT; };
@@ -132,6 +140,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5C64920F2B5C0EA900D966A4 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5C6492102B5C0F2500D966A4 /* DetailContract.swift */,
+				5C6492112B5C0F2500D966A4 /* DetailPresenter.swift */,
+				5C6492122B5C0F2500D966A4 /* DetailRouter.swift */,
+				5C6492132B5C0F2500D966A4 /* DetailInteractor.swift */,
+				5C6492142B5C0F2500D966A4 /* DetailVC.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		5CAE1AB22B59625400C1F3FA = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +178,7 @@
 				5CAE1ABE2B59625400C1F3FA /* AppDelegate.swift */,
 				5CAE1AC02B59625400C1F3FA /* SceneDelegate.swift */,
 				5CAE1B562B59714B00C1F3FA /* Home */,
-				5CAE1B522B59667700C1F3FA /* SecondViewController.swift */,
+				5C64920F2B5C0EA900D966A4 /* Detail */,
 				5CAE1AC72B59625600C1F3FA /* Assets.xcassets */,
 				5CAE1AC92B59625600C1F3FA /* LaunchScreen.storyboard */,
 				5CAE1ACC2B59625600C1F3FA /* Info.plist */,
@@ -372,10 +392,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6492152B5C0F2500D966A4 /* DetailContract.swift in Sources */,
+				5C6492192B5C0F2500D966A4 /* DetailVC.swift in Sources */,
+				5C6492182B5C0F2500D966A4 /* DetailInteractor.swift in Sources */,
 				5CAE1B602B59717F00C1F3FA /* HomeVC.swift in Sources */,
-				5CAE1B532B59667700C1F3FA /* SecondViewController.swift in Sources */,
+				5C6492162B5C0F2500D966A4 /* DetailPresenter.swift in Sources */,
 				5CAE1B5E2B59717F00C1F3FA /* HomeRouter.swift in Sources */,
 				5CAE1B5F2B59717F00C1F3FA /* HomeInteractor.swift in Sources */,
+				5C6492172B5C0F2500D966A4 /* DetailRouter.swift in Sources */,
 				5CAE1B5C2B59717F00C1F3FA /* HomeContract.swift in Sources */,
 				5CAE1B5D2B59717F00C1F3FA /* HomePresenter.swift in Sources */,
 				5CAE1ABF2B59625400C1F3FA /* AppDelegate.swift in Sources */,
@@ -465,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -522,7 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -549,7 +573,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -580,7 +604,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

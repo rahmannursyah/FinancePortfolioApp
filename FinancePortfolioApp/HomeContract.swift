@@ -13,7 +13,7 @@ import Foundation
 protocol HomePresenterToView: AnyObject {
     var presenter: HomeViewToPresenter? { get set }
 	
-	func didSuccessGetTransactionDetail(name: [String], percentage: [Double], nominal: [Double])
+	func didSuccessGetTransactionDetail(model: [PortfolioUIModel])
 	func didFailGetTransactionDetail(error: String)
 }
 
@@ -26,7 +26,10 @@ protocol HomePresenterToInteractor: AnyObject {
 
 // MARK: Router -
 protocol HomePresenterToRouter: AnyObject {
+	var detailPageRouter: DetailPresenterToRouter? { get set }
+	
 	func createHomeModule() -> UIViewController
+	func routeToDetailPage(transactionData: PortfolioUIModel, navigationController: UINavigationController?)
 }
 
 // MARK: Presenter -
@@ -36,6 +39,7 @@ protocol HomeViewToPresenter: AnyObject {
     var router: HomePresenterToRouter? { get set }
 	
 	func getTransactionData(Bundle: Bundle, filename: String)
+	func routeToDetail(transactionData: PortfolioUIModel, navigationController: UINavigationController?)
 }
 
 protocol HomeInteractorToPresenter: AnyObject {
