@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		49E8987B845E08D9CCF119F8 /* Pods_FinancePortfolioAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA7D3328208527773AADA8B /* Pods_FinancePortfolioAppTests.framework */; };
 		4C8893D05F8B8982B6178A50 /* Pods_FinancePortfolioApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2A5EBFD44D23B949BA7ED /* Pods_FinancePortfolioApp.framework */; };
+		5C6492002B5BDA3C00D966A4 /* CommonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6491FF2B5BDA3C00D966A4 /* CommonExtension.framework */; };
 		5CAE1ABF2B59625400C1F3FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1ABE2B59625400C1F3FA /* AppDelegate.swift */; };
 		5CAE1AC12B59625400C1F3FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1AC02B59625400C1F3FA /* SceneDelegate.swift */; };
 		5CAE1AC82B59625600C1F3FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAE1AC72B59625600C1F3FA /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		0D890179D7A4B7C55226C017 /* Pods-FinancePortfolioApp-FinancePortfolioAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancePortfolioApp-FinancePortfolioAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FinancePortfolioApp-FinancePortfolioAppUITests/Pods-FinancePortfolioApp-FinancePortfolioAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3476DF60463BF713AB6FC6B8 /* Pods_FinancePortfolioApp_FinancePortfolioAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinancePortfolioApp_FinancePortfolioAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		591E534DCD2D7D474B38EAE8 /* Pods-FinancePortfolioApp-FinancePortfolioAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancePortfolioApp-FinancePortfolioAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FinancePortfolioApp-FinancePortfolioAppUITests/Pods-FinancePortfolioApp-FinancePortfolioAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C6491FF2B5BDA3C00D966A4 /* CommonExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAE1ABB2B59625400C1F3FA /* FinancePortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancePortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAE1ABE2B59625400C1F3FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CAE1AC02B59625400C1F3FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				5CAE1B682B5978C800C1F3FA /* Domain.framework in Frameworks */,
 				5CAE1B622B59756300C1F3FA /* Data.framework in Frameworks */,
 				4C8893D05F8B8982B6178A50 /* Pods_FinancePortfolioApp.framework in Frameworks */,
+				5C6492002B5BDA3C00D966A4 /* CommonExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 		0ADFD416130139089048622A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5C6491FF2B5BDA3C00D966A4 /* CommonExtension.framework */,
 				5CAE1B672B5978C800C1F3FA /* Domain.framework */,
 				5CAE1B612B59756300C1F3FA /* Data.framework */,
 				BFF2A5EBFD44D23B949BA7ED /* Pods_FinancePortfolioApp.framework */,

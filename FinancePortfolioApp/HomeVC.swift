@@ -43,9 +43,10 @@ class HomeVC: UIViewController {
 }
 
 extension HomeVC: HomePresenterToView {
-	func didSuccessGetTransactionDetail(name: [String], percentage: [Int]) {
+	func didSuccessGetTransactionDetail(name: [String], percentage: [Double], nominal: [Double]) {
 		print(name)
 		print(percentage)
+		print(nominal)
 	}
 	
 	func didFailGetTransactionDetail(error: String) {

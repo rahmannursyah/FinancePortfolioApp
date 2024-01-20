@@ -5,6 +5,7 @@
 //  Created by Rahmannur Rizki Syahputra on 18/01/24.
 //
 
+import CommonExtension
 import Domain
 import Foundation
 
@@ -21,13 +22,18 @@ class HomePresenter: HomeViewToPresenter {
 extension HomePresenter: HomeInteractorToPresenter {
 	func didSuccessFetchTransactionData(data: [TransactionData]) {
 		var transactionNames: [String] = []
-		var transactionPercentage: [Int] = []
-		data.forEach { tranData in
-			transactionNames.append(tranData.label)
-			transactionPercentage.append(Int(tranData.percentage) ?? 0)
+		var transactionPercentage: [Double] = []
+		var transactionNominal: [Double] = []
+		
+		data.forEach { transactionData in
+			transactionNames.append(transactionData.label)
+			transactionPercentage.append(transactionData.percentage.toDouble())
+			transactionData.data.forEach { transactionDetail in
+				transactionNominal.append(transactionDetail.nominal)
+			}
 		}
 		
-		view?.didSuccessGetTransactionDetail(name: transactionNames, percentage: transactionPercentage)
+		view?.didSuccessGetTransactionDetail(name: transactionNames, percentage: transactionPercentage, nominal: transactionNominal)
 	}
 	
 	func didFailFetchPortfolioModel(error: Domain.CustomError) {

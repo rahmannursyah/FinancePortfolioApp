@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CommonExtension/CommonExtension.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Component/Component.xcodeproj">
    </FileRef>
    <FileRef

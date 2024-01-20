@@ -16,6 +16,10 @@ target 'FinancePortfolioApp' do
   end
 end
 
+target 'CommonExtension' do
+	project 'CommonExtension/CommonExtension.project'
+end
+
 target 'Component' do
 	project 'Component/Component.project'
 end

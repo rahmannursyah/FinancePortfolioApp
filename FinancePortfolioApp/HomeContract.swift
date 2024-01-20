@@ -13,7 +13,7 @@ import Foundation
 protocol HomePresenterToView: AnyObject {
     var presenter: HomeViewToPresenter? { get set }
 	
-	func didSuccessGetTransactionDetail(name: [String], percentage: [Int])
+	func didSuccessGetTransactionDetail(name: [String], percentage: [Double], nominal: [Double])
 	func didFailGetTransactionDetail(error: String)
 }
 
