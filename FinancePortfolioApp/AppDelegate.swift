@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Component
+import Data
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,9 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		registerDIs()
 		return true
 	}
 
+	func registerDIs() {
+		DIContainer.shared.register(type: JsonDataRepository.self, component: LocalJsonDataRepository.shared)
+	}
+	
 	// MARK: UISceneSession Lifecycle
 
 	func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

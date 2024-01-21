@@ -5,6 +5,7 @@
 //  Created by Rahmannur Rizki Syahputra on 18/01/24.
 //
 
+import Component
 import Data
 import Domain
 import UIKit
@@ -15,7 +16,7 @@ class HomeRouter: HomePresenterToRouter {
      public func createHomeModule() -> UIViewController {
          let view: UIViewController & HomePresenterToView = HomeVC()
          let presenter: HomeViewToPresenter & HomeInteractorToPresenter = HomePresenter()
-		 let interactor: HomePresenterToInteractor = HomeInteractor(localJsonRepository: LocalJsonDataRepository.shared)
+		 let interactor: HomePresenterToInteractor = HomeInteractor(localJsonRepository: DIContainer.shared.resolve(type: JsonDataRepository.self)!)
          let router: HomePresenterToRouter = HomeRouter()
         
          view.presenter = presenter
