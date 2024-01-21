@@ -7,9 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		221C122C78154DD2ED60BFA1 /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274A1AEF283962FDB12C012C /* Pods_Networking.framework */; };
+		5C0F25A02B5CAFBE004101B5 /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274A1AEF283962FDB12C012C /* Pods_Networking.framework */; };
+		5C0F25A12B5CAFBE004101B5 /* Pods_Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 274A1AEF283962FDB12C012C /* Pods_Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5CAE1B102B5962B800C1F3FA /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CAE1B0F2B5962B800C1F3FA /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C0F25A22B5CAFBE004101B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5C0F25A12B5CAFBE004101B5 /* Pods_Networking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		274A1AEF283962FDB12C012C /* Pods_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221C122C78154DD2ED60BFA1 /* Pods_Networking.framework in Frameworks */,
+				5C0F25A02B5CAFBE004101B5 /* Pods_Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +113,7 @@
 				5CAE1B082B5962B800C1F3FA /* Sources */,
 				5CAE1B092B5962B800C1F3FA /* Frameworks */,
 				5CAE1B0A2B5962B800C1F3FA /* Resources */,
+				5C0F25A22B5CAFBE004101B5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -7,11 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0F259D2B5CAFB9004101B5 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9AE6B5CDA821BE7D8880154 /* Pods_Domain.framework */; };
+		5C0F259E2B5CAFB9004101B5 /* Pods_Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9AE6B5CDA821BE7D8880154 /* Pods_Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C6491E42B5BAAF500D966A4 /* CustomErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6491E32B5BAAF500D966A4 /* CustomErrorModel.swift */; };
 		5CAE1B382B5962D900C1F3FA /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CAE1B372B5962D900C1F3FA /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CAE1B662B59771800C1F3FA /* PortfolioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1B652B59771800C1F3FA /* PortfolioModel.swift */; };
-		6FF5F00332B7FCF0DBC87DDA /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9AE6B5CDA821BE7D8880154 /* Pods_Domain.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C0F259F2B5CAFB9004101B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5C0F259E2B5CAFB9004101B5 /* Pods_Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2AE4C2B09AD876A4A0DD862B /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
@@ -28,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FF5F00332B7FCF0DBC87DDA /* Pods_Domain.framework in Frameworks */,
+				5C0F259D2B5CAFB9004101B5 /* Pods_Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +119,7 @@
 				5CAE1B302B5962D900C1F3FA /* Sources */,
 				5CAE1B312B5962D900C1F3FA /* Frameworks */,
 				5CAE1B322B5962D900C1F3FA /* Resources */,
+				5C0F259F2B5CAFB9004101B5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

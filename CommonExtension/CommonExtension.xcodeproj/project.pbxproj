@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0F25AD2B5CAFE1004101B5 /* Pods_CommonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE7B6DFE995E23B4ED3813B /* Pods_CommonExtension.framework */; };
+		5C0F25AE2B5CAFE1004101B5 /* Pods_CommonExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE7B6DFE995E23B4ED3813B /* Pods_CommonExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C6491F72B5BD9A500D966A4 /* CommonExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C6491F62B5BD9A500D966A4 /* CommonExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C6491FE2B5BD9C400D966A4 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6491FD2B5BD9C400D966A4 /* String.swift */; };
 		5C64920E2B5C0B1900D966A4 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C64920D2B5C0B1900D966A4 /* Functions.swift */; };
 		5C64921B2B5C20A600D966A4 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C64921A2B5C20A600D966A4 /* Double.swift */; };
-		C99EF8584DFA203AE37F85D2 /* Pods_CommonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE7B6DFE995E23B4ED3813B /* Pods_CommonExtension.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C0F25AF2B5CAFE1004101B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5C0F25AE2B5CAFE1004101B5 /* Pods_CommonExtension.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A881DBFA4548B11068D8333 /* Pods-CommonExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonExtension.debug.xcconfig"; path = "Target Support Files/Pods-CommonExtension/Pods-CommonExtension.debug.xcconfig"; sourceTree = "<group>"; };
@@ -30,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C99EF8584DFA203AE37F85D2 /* Pods_CommonExtension.framework in Frameworks */,
+				5C0F25AD2B5CAFE1004101B5 /* Pods_CommonExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +122,7 @@
 				5C6491EF2B5BD9A500D966A4 /* Sources */,
 				5C6491F02B5BD9A500D966A4 /* Frameworks */,
 				5C6491F12B5BD9A500D966A4 /* Resources */,
+				5C0F25AF2B5CAFE1004101B5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

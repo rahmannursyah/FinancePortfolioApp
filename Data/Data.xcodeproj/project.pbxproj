@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0F25A82B5CAFD9004101B5 /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109251D3B909FE6ED600C8D9 /* Pods_Data.framework */; };
+		5C0F25A92B5CAFD9004101B5 /* Pods_Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 109251D3B909FE6ED600C8D9 /* Pods_Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C6491DF2B5BA94000D966A4 /* LocalJsonDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6491DE2B5BA94000D966A4 /* LocalJsonDataRepository.swift */; };
 		5C6491E22B5BA9C200D966A4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6491E12B5BA9C200D966A4 /* Constants.swift */; };
 		5C64920A2B5BE0D700D966A4 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6491E52B5BAB4900D966A4 /* Domain.framework */; };
 		5C64920B2B5BE0D700D966A4 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6491E52B5BAB4900D966A4 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5CAE1B4C2B5962E500C1F3FA /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CAE1B4B2B5962E500C1F3FA /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CAE1B552B5970C700C1F3FA /* portfolioData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CAE1B542B5970C700C1F3FA /* portfolioData.json */; };
-		63DDFA0BDA3AED45AAD1CF3F /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109251D3B909FE6ED600C8D9 /* Pods_Data.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5C0F25A92B5CAFD9004101B5 /* Pods_Data.framework in Embed Frameworks */,
 				5C64920B2B5BE0D700D966A4 /* Domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -47,8 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0F25A82B5CAFD9004101B5 /* Pods_Data.framework in Frameworks */,
 				5C64920A2B5BE0D700D966A4 /* Domain.framework in Frameworks */,
-				63DDFA0BDA3AED45AAD1CF3F /* Pods_Data.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,9 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55816D8587C57AFC4B45971D /* Pods_Component.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1FDA000DDB33000B1CBA63 /* Pods_Component.framework */; };
+		5C0F25AA2B5CAFDD004101B5 /* Pods_Component.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1FDA000DDB33000B1CBA63 /* Pods_Component.framework */; };
+		5C0F25AB2B5CAFDD004101B5 /* Pods_Component.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1FDA000DDB33000B1CBA63 /* Pods_Component.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5CAE1B242B5962CD00C1F3FA /* Component.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CAE1B232B5962CD00C1F3FA /* Component.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C0F25AC2B5CAFDD004101B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5C0F25AB2B5CAFDD004101B5 /* Pods_Component.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F5E63C9534A484C67C1C004 /* Pods-Component.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Component.release.xcconfig"; path = "Target Support Files/Pods-Component/Pods-Component.release.xcconfig"; sourceTree = "<group>"; };
@@ -24,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55816D8587C57AFC4B45971D /* Pods_Component.framework in Frameworks */,
+				5C0F25AA2B5CAFDD004101B5 /* Pods_Component.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +113,7 @@
 				5CAE1B1C2B5962CD00C1F3FA /* Sources */,
 				5CAE1B1D2B5962CD00C1F3FA /* Frameworks */,
 				5CAE1B1E2B5962CD00C1F3FA /* Resources */,
+				5C0F25AC2B5CAFDD004101B5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

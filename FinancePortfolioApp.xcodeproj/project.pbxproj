@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		49E8987B845E08D9CCF119F8 /* Pods_FinancePortfolioAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA7D3328208527773AADA8B /* Pods_FinancePortfolioAppTests.framework */; };
-		4C8893D05F8B8982B6178A50 /* Pods_FinancePortfolioApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2A5EBFD44D23B949BA7ED /* Pods_FinancePortfolioApp.framework */; };
+		5C0F259C2B5CA931004101B5 /* HomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F259B2B5CA931004101B5 /* HomePresenterTest.swift */; };
+		5C0F25A62B5CAFCD004101B5 /* Pods_FinancePortfolioApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2A5EBFD44D23B949BA7ED /* Pods_FinancePortfolioApp.framework */; };
+		5C0F25A72B5CAFCD004101B5 /* Pods_FinancePortfolioApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2A5EBFD44D23B949BA7ED /* Pods_FinancePortfolioApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C6492032B5BE0CC00D966A4 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAE1B672B5978C800C1F3FA /* Domain.framework */; };
 		5C6492042B5BE0CC00D966A4 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAE1B672B5978C800C1F3FA /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C6492062B5BE0CE00D966A4 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAE1B612B59756300C1F3FA /* Data.framework */; };
@@ -24,7 +26,6 @@
 		5CAE1AC12B59625400C1F3FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1AC02B59625400C1F3FA /* SceneDelegate.swift */; };
 		5CAE1AC82B59625600C1F3FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAE1AC72B59625600C1F3FA /* Assets.xcassets */; };
 		5CAE1ACB2B59625600C1F3FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CAE1AC92B59625600C1F3FA /* LaunchScreen.storyboard */; };
-		5CAE1AD62B59625600C1F3FA /* FinancePortfolioAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1AD52B59625600C1F3FA /* FinancePortfolioAppTests.swift */; };
 		5CAE1B5C2B59717F00C1F3FA /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1B572B59717F00C1F3FA /* HomeContract.swift */; };
 		5CAE1B5D2B59717F00C1F3FA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1B582B59717F00C1F3FA /* HomePresenter.swift */; };
 		5CAE1B5E2B59717F00C1F3FA /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE1B592B59717F00C1F3FA /* HomeRouter.swift */; };
@@ -51,6 +52,7 @@
 			files = (
 				5C6492072B5BE0CE00D966A4 /* Data.framework in Embed Frameworks */,
 				5C6492042B5BE0CC00D966A4 /* Domain.framework in Embed Frameworks */,
+				5C0F25A72B5CAFCD004101B5 /* Pods_FinancePortfolioApp.framework in Embed Frameworks */,
 				5C6492092B5BE0CF00D966A4 /* CommonExtension.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -62,6 +64,7 @@
 		0D890179D7A4B7C55226C017 /* Pods-FinancePortfolioApp-FinancePortfolioAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancePortfolioApp-FinancePortfolioAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FinancePortfolioApp-FinancePortfolioAppUITests/Pods-FinancePortfolioApp-FinancePortfolioAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3476DF60463BF713AB6FC6B8 /* Pods_FinancePortfolioApp_FinancePortfolioAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinancePortfolioApp_FinancePortfolioAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		591E534DCD2D7D474B38EAE8 /* Pods-FinancePortfolioApp-FinancePortfolioAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancePortfolioApp-FinancePortfolioAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FinancePortfolioApp-FinancePortfolioAppUITests/Pods-FinancePortfolioApp-FinancePortfolioAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C0F259B2B5CA931004101B5 /* HomePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTest.swift; sourceTree = "<group>"; };
 		5C6491FF2B5BDA3C00D966A4 /* CommonExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6492102B5C0F2500D966A4 /* DetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContract.swift; sourceTree = "<group>"; };
 		5C6492112B5C0F2500D966A4 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
@@ -75,7 +78,6 @@
 		5CAE1ACA2B59625600C1F3FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CAE1ACC2B59625600C1F3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CAE1AD12B59625600C1F3FA /* FinancePortfolioAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinancePortfolioAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CAE1AD52B59625600C1F3FA /* FinancePortfolioAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePortfolioAppTests.swift; sourceTree = "<group>"; };
 		5CAE1B572B59717F00C1F3FA /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeContract.swift; path = FinancePortfolioApp/HomeContract.swift; sourceTree = SOURCE_ROOT; };
 		5CAE1B582B59717F00C1F3FA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePresenter.swift; path = FinancePortfolioApp/HomePresenter.swift; sourceTree = SOURCE_ROOT; };
 		5CAE1B592B59717F00C1F3FA /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeRouter.swift; path = FinancePortfolioApp/HomeRouter.swift; sourceTree = SOURCE_ROOT; };
@@ -98,7 +100,7 @@
 			files = (
 				5C6492062B5BE0CE00D966A4 /* Data.framework in Frameworks */,
 				5C6492032B5BE0CC00D966A4 /* Domain.framework in Frameworks */,
-				4C8893D05F8B8982B6178A50 /* Pods_FinancePortfolioApp.framework in Frameworks */,
+				5C0F25A62B5CAFCD004101B5 /* Pods_FinancePortfolioApp.framework in Frameworks */,
 				5C6492082B5BE0CF00D966A4 /* CommonExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,7 +191,7 @@
 		5CAE1AD42B59625600C1F3FA /* FinancePortfolioAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				5CAE1AD52B59625600C1F3FA /* FinancePortfolioAppTests.swift */,
+				5C0F259B2B5CA931004101B5 /* HomePresenterTest.swift */,
 			);
 			path = FinancePortfolioAppTests;
 			sourceTree = "<group>";
@@ -411,7 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CAE1AD62B59625600C1F3FA /* FinancePortfolioAppTests.swift in Sources */,
+				5C0F259C2B5CA931004101B5 /* HomePresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +629,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52727RY679;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
@@ -648,6 +651,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52727RY679;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
